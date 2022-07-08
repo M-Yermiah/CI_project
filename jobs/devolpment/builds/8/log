@@ -1,0 +1,145 @@
+Started by user [8mha:////4LWzNfYFkeXFKsSgnz4pKYyxqF3YSgEIGMCV5/I3cOuaAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgY+/dLi1CL9ytSi3MzEDEMA0k3PS8MAAAA=[0myermiah
+Running as SYSTEM
+Building in workspace /home/ubuntu/.jenkins/workspace/devolpment
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/ubuntu/.jenkins/workspace/devolpment/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/M-Yermiah/CI_CD.git # timeout=10
+Fetching upstream changes from https://github.com/M-Yermiah/CI_CD.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+ > git fetch --tags --progress -- https://github.com/M-Yermiah/CI_CD.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 43bb8339d190f2505595aeb0b210bc0e945976dd (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 43bb8339d190f2505595aeb0b210bc0e945976dd # timeout=10
+Commit message: "Create Jenkinsfile"
+ > git rev-list --no-walk 43bb8339d190f2505595aeb0b210bc0e945976dd # timeout=10
+[devolpment] $ /bin/sh -xe /tmp/jenkins3737153256164720099.sh
++ echo Hello World
+Hello World
+[devolpment] $ mvn package
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for com.example.maven-project:server:jar:1.0-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for com.example.maven-project:webapp:war:1.0-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for com.example.maven-project:maven-project:pom:1.0-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter. @ line 56, column 24
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] The project com.example.maven-project:maven-project:pom:1.0-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Build Order:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Maven Project                                                      [pom]
+[[1;34mINFO[m] Server                                                             [jar]
+[[1;34mINFO[m] Webapp                                                             [war]
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------< [0;36mcom.example.maven-project:maven-project[0;1m >---------------[m
+[[1;34mINFO[m] [1mBuilding Maven Project 1.0-SNAPSHOT                                [1/3][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------< [0;36mcom.example.maven-project:server[0;1m >------------------[m
+[[1;34mINFO[m] [1mBuilding Server 1.0-SNAPSHOT                                       [2/3][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36mserver[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'utf-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/ubuntu/.jenkins/workspace/devolpment/server/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36mserver[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36mserver[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'utf-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/ubuntu/.jenkins/workspace/devolpment/server/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36mserver[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.11:test[m [1m(default-test)[m @ [36mserver[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /home/ubuntu/.jenkins/workspace/devolpment/server/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.example.TestGreeter
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36mserver[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------< [0;36mcom.example.maven-project:webapp[0;1m >------------------[m
+[[1;34mINFO[m] [1mBuilding Webapp 1.0-SNAPSHOT                                       [3/3][m
+[[1;34mINFO[m] [1m--------------------------------[ war ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36mwebapp[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'utf-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/ubuntu/.jenkins/workspace/devolpment/webapp/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:compile[m [1m(default-compile)[m @ [36mwebapp[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36mwebapp[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'utf-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/ubuntu/.jenkins/workspace/devolpment/webapp/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.3.2:testCompile[m [1m(default-testCompile)[m @ [36mwebapp[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.11:test[m [1m(default-test)[m @ [36mwebapp[0;1m ---[m
+[[1;34mINFO[m] No tests to run.
+[[1;34mINFO[m] Surefire report directory: /home/ubuntu/.jenkins/workspace/devolpment/webapp/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-war-plugin:2.2:war[m [1m(default-war)[m @ [36mwebapp[0;1m ---[m
+[[1;34mINFO[m] Packaging webapp
+[[1;34mINFO[m] Assembling webapp [webapp] in [/home/ubuntu/.jenkins/workspace/devolpment/webapp/target/webapp]
+[[1;34mINFO[m] Processing war project
+[[1;34mINFO[m] Copying webapp resources [/home/ubuntu/.jenkins/workspace/devolpment/webapp/src/main/webapp]
+[[1;34mINFO[m] Webapp assembled in [36 msecs]
+[[1;34mINFO[m] Building war: /home/ubuntu/.jenkins/workspace/devolpment/webapp/target/webapp.war
+[[1;34mINFO[m] WEB-INF/web.xml already added, skipping
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Summary for Maven Project 1.0-SNAPSHOT:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Maven Project ...................................... [1;32mSUCCESS[m [  0.003 s]
+[[1;34mINFO[m] Server ............................................. [1;32mSUCCESS[m [  2.592 s]
+[[1;34mINFO[m] Webapp ............................................. [1;32mSUCCESS[m [  0.920 s]
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  3.817 s
+[[1;34mINFO[m] Finished at: 2022-07-08T06:08:31Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[DeployPublisher][INFO] Attempting to deploy 1 war file(s)
+[DeployPublisher][INFO] Deploying /home/ubuntu/.jenkins/workspace/devolpment/webapp/target/webapp.war to container Tomcat 8.x Remote with context yermiah
+  Redeploying [/home/ubuntu/.jenkins/workspace/devolpment/webapp/target/webapp.war]
+  Undeploying [/home/ubuntu/.jenkins/workspace/devolpment/webapp/target/webapp.war]
+  Deploying [/home/ubuntu/.jenkins/workspace/devolpment/webapp/target/webapp.war]
+Triggering a new build of [8mha:////4KyETEc34Ex5qkU+vHnAy7Le+glwRu7CNoFz5MnsTGaLAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/az8JP2S1OISoHZ9AFumAcXCAAAA[0mtesting
+Finished: SUCCESS

@@ -1,0 +1,24 @@
+Started by user [8mha:////4LWzNfYFkeXFKsSgnz4pKYyxqF3YSgEIGMCV5/I3cOuaAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgY+/dLi1CL9ytSi3MzEDEMA0k3PS8MAAAA=[0myermiah
+Running as SYSTEM
+Building in workspace /home/ubuntu/.jenkins/workspace/testing
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/ubuntu/.jenkins/workspace/testing/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/M-Yermiah/Test # timeout=10
+Fetching upstream changes from https://github.com/M-Yermiah/Test
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+ > git fetch --tags --progress -- https://github.com/M-Yermiah/Test +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision b1cefaa157abc795968dffdce14d09ba424112ca (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b1cefaa157abc795968dffdce14d09ba424112ca # timeout=10
+Commit message: "Update Testing.java"
+ > git rev-list --no-walk b1cefaa157abc795968dffdce14d09ba424112ca # timeout=10
+[testing] $ /bin/sh -xe /tmp/jenkins183532462443501245.sh
++ echo Testingpassed
+Testingpassed
+ERROR: Failed to copy artifacts from devolpment with filter: **
+[DeployPublisher][INFO] Build failed, project not deployed
+Finished: FAILURE

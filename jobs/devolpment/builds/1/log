@@ -1,0 +1,22 @@
+Started by user [8mha:////4LWzNfYFkeXFKsSgnz4pKYyxqF3YSgEIGMCV5/I3cOuaAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgY+/dLi1CL9ytSi3MzEDEMA0k3PS8MAAAA=[0myermiah
+Running as SYSTEM
+Building in workspace /home/ubuntu/.jenkins/workspace/Devolpment1
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/M-Yermiah/CI_CD.git
+ > git init /home/ubuntu/.jenkins/workspace/Devolpment1 # timeout=10
+Fetching upstream changes from https://github.com/M-Yermiah/CI_CD.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+ > git fetch --tags --progress -- https://github.com/M-Yermiah/CI_CD.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/M-Yermiah/CI_CD.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 43bb8339d190f2505595aeb0b210bc0e945976dd (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 43bb8339d190f2505595aeb0b210bc0e945976dd # timeout=10
+Commit message: "Create Jenkinsfile"
+First time build. Skipping changelog.
+Finished: SUCCESS

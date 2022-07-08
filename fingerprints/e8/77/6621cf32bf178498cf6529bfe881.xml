@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2022-07-08 06:33:59.726 UTC</timestamp>
+  <original>
+    <name>devolpment</name>
+    <number>10</number>
+  </original>
+  <md5sum>e8776621cf32bf178498cf6529bfe881</md5sum>
+  <fileName>webapp.war</fileName>
+  <usages>
+    <entry>
+      <string>testing</string>
+      <ranges>9-10</ranges>
+    </entry>
+    <entry>
+      <string>devolpment</string>
+      <ranges>10</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

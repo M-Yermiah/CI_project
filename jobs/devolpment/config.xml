@@ -1,0 +1,81 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.copyartifact.CopyArtifactPermissionProperty plugin="copyartifact@1.46.4">
+      <projectNameList>
+        <string>testing</string>
+      </projectNameList>
+    </hudson.plugins.copyartifact.CopyArtifactPermissionProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.11.3">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/M-Yermiah/CI_CD.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="empty-list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>echo &quot;Hello World&quot;</command>
+      <configuredLocalRules/>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Maven>
+      <targets>package</targets>
+      <usePrivateRepository>false</usePrivateRepository>
+      <settings class="jenkins.mvn.DefaultSettingsProvider"/>
+      <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
+      <injectBuildVariables>false</injectBuildVariables>
+    </hudson.tasks.Maven>
+  </builders>
+  <publishers>
+    <hudson.tasks.ArtifactArchiver>
+      <artifacts>**/*.war</artifacts>
+      <allowEmptyArchive>false</allowEmptyArchive>
+      <onlyIfSuccessful>false</onlyIfSuccessful>
+      <fingerprint>false</fingerprint>
+      <defaultExcludes>true</defaultExcludes>
+      <caseSensitive>true</caseSensitive>
+      <followSymlinks>false</followSymlinks>
+    </hudson.tasks.ArtifactArchiver>
+    <hudson.tasks.BuildTrigger>
+      <childProjects>testing</childProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </hudson.tasks.BuildTrigger>
+    <hudson.plugins.deploy.DeployPublisher plugin="deploy@1.16">
+      <adapters>
+        <hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
+          <credentialsId>3bb2219b-5aa4-4781-815d-25898dbdedff</credentialsId>
+          <url>http://3.87.74.20:8080</url>
+          <path></path>
+        </hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
+      </adapters>
+      <contextPath>yermiah</contextPath>
+      <war>**/*.war</war>
+      <onFailure>false</onFailure>
+    </hudson.plugins.deploy.DeployPublisher>
+  </publishers>
+  <buildWrappers/>
+</project>

@@ -1,0 +1,25 @@
+Started by upstream project "[8mha:////4DHZoX+/qzEoC5991k3Uy7OuxcVQ/MZHfi02SL+d3nNBAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYB/az8JP2U1LL8nILc1LwSfQBxKMoRxQAAAA==[0mdevolpment" build number [8mha:////4IIKmY87vwQe37PXtyKLERp+J0Js5Ssv/73e6Q+ZBIjLAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwmoBn6WflJ+impZfk5BbmpeSX6hgYAl/Q7b8cAAAA=[0m10
+originally caused by:
+ Started by user [8mha:////4LWzNfYFkeXFKsSgnz4pKYyxqF3YSgEIGMCV5/I3cOuaAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgY+/dLi1CL9ytSi3MzEDEMA0k3PS8MAAAA=[0myermiah
+Running as SYSTEM
+Building in workspace /home/ubuntu/.jenkins/workspace/testing
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/ubuntu/.jenkins/workspace/testing/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/M-Yermiah/Test.git # timeout=10
+Fetching upstream changes from https://github.com/M-Yermiah/Test.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+ > git fetch --tags --progress -- https://github.com/M-Yermiah/Test.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision b1cefaa157abc795968dffdce14d09ba424112ca (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b1cefaa157abc795968dffdce14d09ba424112ca # timeout=10
+Commit message: "Update Testing.java"
+ > git rev-list --no-walk b1cefaa157abc795968dffdce14d09ba424112ca # timeout=10
+[testing] $ /bin/sh -xe /tmp/jenkins6654330992393355611.sh
++ echo Testing passed
+Testing passed
+Copied 1 artifact from "[8mha:////4M22hatR7/9+yKLEjsFf9K4LIaclx8eJPC61445L0/itAAAAkR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgKmEQ0M/KT9JPSS3LzynITc0r0QcAkWI1qZUAAAA=[0mdevolpment" build number [8mha:////4KHCDHBQD51tS0myE9AfSF0A63Z2VU+yuRfFOo8gi/yeAAAAlB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmEQ1s/KT9JPSS3LzynITc0r0Tc00AcAm0zG/JgAAAA=[0m10
+Finished: SUCCESS
